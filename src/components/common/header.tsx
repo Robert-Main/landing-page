@@ -21,8 +21,16 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
+      href: '#merch',
+      title: 'Merch'
+    },
+    {
+      href: '#episodes',
+      title: 'Episodes'
+    },
+    {
       href: '#pricing',
-      title: 'Features'
+      title: 'Hosts'
     },
     {
       href: 'about-us',
@@ -95,8 +103,7 @@ export function Header({ className }: SidebarProps) {
   return (
     <div
       className={cn(
-        `flex md:h-12 h-14 items-center justify-center w-full
-          border-b`,
+        'flex md:h-[80px] h-14 items-center justify-center w-full',
         className
       )}
     >

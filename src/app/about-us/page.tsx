@@ -192,7 +192,7 @@ const page = () => {
                 <p className="text-grey-600 body-normal w-full mt-1">
                   <span className=" font-semibold">
                     Our Team
-                  </span>{' '}
+                  </span>
                   A diverse group of professionals dedicated
                   to innovation, excellence, and customer
                   satisfaction.
@@ -220,7 +220,7 @@ const page = () => {
                 <p className="text-grey-600 body-normal w-full mt-1">
                   <span className="text-grey-800 font-semibold">
                     Our Values
-                  </span>{' '}
+                  </span>
                   We believe in integrity, excellence, and
                   continuous improvement in everything we
                   do.
@@ -249,7 +249,7 @@ const page = () => {
             <p className="text-grey-600 body-normal w-full mt-1">
               <span className="text-grey-800 font-semibold">
                 Our Approach
-              </span>{' '}
+              </span>
               Collaborative, client-focused, and driven by a
               passion for solving complex problems.
             </p>
@@ -276,7 +276,7 @@ const page = () => {
                 <p className="text-grey-600 body-normal w-full mt-1">
                   <span className="text-grey-800 font-semibold">
                     Our Promise
-                  </span>{' '}
+                  </span>
                   To always put our clients first and
                   deliver exceptional service and support.
                 </p>
@@ -295,9 +295,13 @@ const page = () => {
 
       <div className="max-w-[1120px] py-10 px-4 mx-auto mt-4">
         <div className="flex-1 p-4 rounded-[20px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {hero_items.map((item, idx) => (
-              <div key={idx}>
+              <div
+                key={idx}
+                className="bg-gray-900 p-4 rounded-lg shadow-lg flex justify-center
+                  gap-3 flex-col h-[200px]"
+              >
                 <h3 className="flex items-center gap-2">
                   {item.image}
                   <span className=" header-normal">
@@ -313,7 +317,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="p-4 bg-quantflow-500 rounded-[20px] shadow-lg">
+      <div className="p-4 bg-gray-900 rounded-[20px] shadow-lg">
         <div className="max-w-[1120px] mx-auto py-16 lg:py-24">
           <h2 className="hero-medium text-white">
             Our Journey
@@ -389,7 +393,6 @@ const page = () => {
                 />
               </p>
               <hr className="border-grey-300" />
-              <hr className="!text-gray-800 " />
               <p className="heder-normal p-2 text-grey-800 flex w-full justify-between">
                 <span>Fixed Workflow Automation</span>
                 <ChevronDown
